@@ -15,6 +15,7 @@
 		3C3B3EA2237C991F00E034E4 /* Factorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B3EA1237C991F00E034E4 /* Factorization.swift */; };
 		3C3B3EA5237C996100E034E4 /* MathToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B3EA3237C996000E034E4 /* MathToolsTests.swift */; };
 		3C3B3EA6237C996100E034E4 /* StringToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B3EA4237C996100E034E4 /* StringToolsTests.swift */; };
+		6130C898229503BA91C4C3A3 /* FactorizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6130C5AE4F82B2475E241B3F /* FactorizationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		3C3B3EA1237C991F00E034E4 /* Factorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorization.swift; sourceTree = "<group>"; };
 		3C3B3EA3237C996000E034E4 /* MathToolsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MathToolsTests.swift; path = ../../assets/MathToolsTests.swift; sourceTree = "<group>"; };
 		3C3B3EA4237C996100E034E4 /* StringToolsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringToolsTests.swift; path = ../../assets/StringToolsTests.swift; sourceTree = "<group>"; };
+		6130C5AE4F82B2475E241B3F /* FactorizationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactorizationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				3C3B3EA4237C996100E034E4 /* StringToolsTests.swift */,
 				3C3B3E91237C98DB00E034E4 /* HelloSwiftTests.swift */,
 				3C3B3E93237C98DB00E034E4 /* Info.plist */,
+				6130C5AE4F82B2475E241B3F /* FactorizationTests.swift */,
 			);
 			path = HelloSwiftTests;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				3C3B3E92237C98DB00E034E4 /* HelloSwiftTests.swift in Sources */,
 				3C3B3EA5237C996100E034E4 /* MathToolsTests.swift in Sources */,
 				3C3B3EA6237C996100E034E4 /* StringToolsTests.swift in Sources */,
+				6130C898229503BA91C4C3A3 /* FactorizationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
