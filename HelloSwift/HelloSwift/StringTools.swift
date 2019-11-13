@@ -9,7 +9,15 @@
 import Foundation
 
 class StringTools {
-    public func countOccurrences(character: String, from: String, caseSensitive: Bool = true) -> Int {
-        return 0
+    public func countOccurrences(character: String, from string: String, caseSensitive isCaseSensitive: Bool = true) -> Int {
+        var foundOccurrences = 0
+
+        for char in string {
+            if String(char) == character && isCaseSensitive || String(char).uppercased() == character.uppercased() && !isCaseSensitive {
+                foundOccurrences += 1
+            }
+        }
+
+        return foundOccurrences
     }
 }
