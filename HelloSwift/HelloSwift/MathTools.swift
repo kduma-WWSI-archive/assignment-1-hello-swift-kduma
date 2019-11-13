@@ -12,15 +12,22 @@ import Foundation
 
 class MathTools {
 
-    public func fibonacci(_ i: Int) -> Int {
-        if i == 0 {
+    public func fibonacci(_ n: Int) -> Int {
+        if n == 0 {
             return 0
         }
 
-        if i < 3 {
+        if n == 1 || n == 2 {
             return 1
         }
 
-        return fibonacci(i-1) + fibonacci(i-2)
+        var a = 1, b = 1
+
+        for _ in 3...n {
+            b = a+b
+            a = b-a
+        }
+
+        return b
     }
 }
