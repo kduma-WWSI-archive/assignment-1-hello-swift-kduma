@@ -36,46 +36,46 @@ class StringToolsTests: XCTestCase {
 	}
 
 	func testOccurencesFromEmptyString() {
-		XCTAssertEqual(stringTools.countOccurences(character: "x", from: ""), 0)
+		XCTAssertEqual(stringTools.countOccurrences(character: "x", from: ""), 0)
 	}
 
 	func testLongString() {
-		XCTAssertEqual(stringTools.countOccurences(character: "r", from: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), 22)
+		XCTAssertEqual(stringTools.countOccurrences(character: "r", from: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), 22)
 	}
 
 	func testCorrectlyUsesCaseSensitive1() {
-		XCTAssertEqual(stringTools.countOccurences(character: "x", from: "xXX"), 1)
+		XCTAssertEqual(stringTools.countOccurrences(character: "x", from: "xXX"), 1)
 	}
 
 	func testCorrectlyUsesCaseSensitive2() {
-		XCTAssertEqual(stringTools.countOccurences(character: "x", from: "xXX", caseSensitive: true), 1)
+		XCTAssertEqual(stringTools.countOccurrences(character: "x", from: "xXX", caseSensitive: true), 1)
 	}
 
 	func testCorrectlyUsesCaseSensitive3() {
-		XCTAssertEqual(stringTools.countOccurences(character: "x", from: "xXX", caseSensitive: false), 3)
+		XCTAssertEqual(stringTools.countOccurrences(character: "x", from: "xXX", caseSensitive: false), 3)
 	}
 
 	func testCorrectlySearchesForEmoji1() {
-		XCTAssertEqual(stringTools.countOccurences(character: "🙈", from: "🙉🙉🙉🏃‍♀️"), 0)
+		XCTAssertEqual(stringTools.countOccurrences(character: "🙈", from: "🙉🙉🙉🏃‍♀️"), 0)
 	}
 
 	func testCorrectlySearchesForEmoji2() {
-		XCTAssertEqual(stringTools.countOccurences(character: "🙈", from: "🙉🙈🙉🙉🏃‍♀️"), 1)
+		XCTAssertEqual(stringTools.countOccurrences(character: "🙈", from: "🙉🙈🙉🙉🏃‍♀️"), 1)
 	}
 
 	func testCorrectlySearchesForEmoji3() {
-		XCTAssertEqual(stringTools.countOccurences(character: "🙈", from: "🙉🙉🙉🏃‍♀️", caseSensitive: false), 0)
+		XCTAssertEqual(stringTools.countOccurrences(character: "🙈", from: "🙉🙉🙉🏃‍♀️", caseSensitive: false), 0)
 	}
 
 	func testCorrectlySearchesForEmoji4() {
-		XCTAssertEqual(stringTools.countOccurences(character: "🙈", from: "🙉🙈🙉🙉🏃‍♀️", caseSensitive: false), 1)
+		XCTAssertEqual(stringTools.countOccurrences(character: "🙈", from: "🙉🙈🙉🙉🏃‍♀️", caseSensitive: false), 1)
 	}
 
 	func testCorrectlySearchesRegexSpecialCharacters1() {
-		XCTAssertEqual(stringTools.countOccurences(character: "?", from: "Hello. How are you? I'm quite fine thanks."), 1)
+		XCTAssertEqual(stringTools.countOccurrences(character: "?", from: "Hello. How are you? I'm quite fine thanks."), 1)
 	}
 
 	func testCorrectlySearchesRegexSpecialCharacters2() {
-		XCTAssertEqual(stringTools.countOccurences(character: ".", from: "Hello. How are you? I'm quite fine thanks."), 2)
+		XCTAssertEqual(stringTools.countOccurrences(character: ".", from: "Hello. How are you? I'm quite fine thanks."), 2)
 	}
 }

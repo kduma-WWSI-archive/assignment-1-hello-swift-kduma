@@ -9,7 +9,7 @@
 import Foundation
 
 class StringTools {
-    public func countOccurences(character: String, from: String, caseSensitive: Bool = true) -> Int {
+    public func countOccurrences(character: String, from: String, caseSensitive: Bool = true) -> Int {
         return 0
     }
 }
