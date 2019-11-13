@@ -8,13 +8,14 @@
 
 import Foundation
 
+
 class Factorization {
     enum Result: Equatable {
         case prime
         case composite(factors: [Int])
     }
 
-    static func factorize(_ number: Int) -> Result? {
+    static func factorize (_ number: Int) -> Result? {
         var number = number
         var factors: [Int] = []
 
@@ -31,11 +32,11 @@ class Factorization {
             factors.append(number)
         }
 
-        if(factors.count == 0){
+        if (factors.count == 0) {
             return nil
         }
 
-        if(factors.count == 1){
+        if (factors.count == 1) {
             return .prime
         }
 

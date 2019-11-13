@@ -9,10 +9,8 @@
 import Foundation
 
 
-
 class MathTools {
-
-    public func fibonacci(_ n: Int) -> Int {
+    public func fibonacci (_ n: Int) -> Int {
         if n == 0 {
             return 0
         }
@@ -24,8 +22,8 @@ class MathTools {
         var a = 1, b = 1
 
         for _ in 3...n {
-            b = a+b
-            a = b-a
+            b = a + b
+            a = b - a
         }
 
         return b

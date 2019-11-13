@@ -8,8 +8,9 @@
 
 import Foundation
 
+
 class StringTools {
-    public func countOccurrences(character: String, from string: String, caseSensitive isCaseSensitive: Bool = true) -> Int {
+    public func countOccurrences (character: String, from string: String, caseSensitive isCaseSensitive: Bool = true) -> Int {
         var foundOccurrences = 0
 
         for char in string {
