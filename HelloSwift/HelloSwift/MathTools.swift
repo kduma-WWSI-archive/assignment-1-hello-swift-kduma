@@ -13,6 +13,14 @@ import Foundation
 class MathTools {
 
     public func fibonacci(_ i: Int) -> Int {
-        return 0
+        if i == 0 {
+            return 0
+        }
+
+        if i < 3 {
+            return 1
+        }
+
+        return fibonacci(i-1) + fibonacci(i-2)
     }
 }
