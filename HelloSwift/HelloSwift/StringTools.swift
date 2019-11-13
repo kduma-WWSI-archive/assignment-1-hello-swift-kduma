@@ -13,7 +13,7 @@ class StringTools {
         var foundOccurrences = 0
 
         for char in string {
-            if String(char) == character && isCaseSensitive || String(char).uppercased() == character.uppercased() && !isCaseSensitive {
+            if String(char).compare(character, options: isCaseSensitive ? [] : .caseInsensitive) == .orderedSame {
                 foundOccurrences += 1
             }
         }
