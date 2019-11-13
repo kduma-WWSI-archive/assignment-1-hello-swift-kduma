@@ -111,3 +111,4 @@ Icon?
 **/Solution
 **/Secret
 *.key
+/HelloSwift/.idea
